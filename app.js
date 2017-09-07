@@ -16,8 +16,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(error.notFound);
 app.use(error.serverError);
 
-app.set('/')
-
 load('models')
   .then('controllers')
   .then('routes')
